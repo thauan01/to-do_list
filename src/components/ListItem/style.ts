@@ -4,7 +4,14 @@ type ContainerProps = {
     done: boolean;
 }
 
-/*export const Container = styled.div`
+function TextDecoration() {
+    return(
+        'line-trough'
+    )
+    
+} 
+
+export const Container = styled.div`
     display: flex;
     background-color: #20212c;
     padding: 10px;
@@ -20,10 +27,10 @@ type ContainerProps = {
 
     label{
         color: #ccc;
-        text-decoration: ${done ? 'line-trough': 'initial'};
+        text-decoration: ${TextDecoration};
     }
-`;*/
-export const Container = styled.div(({ done }: ContainerProps)=>(
+`;
+/*export const Container = styled.div(({ done }: ContainerProps)=>(
     `
     display: flex;
     background-color: #20212c;
@@ -44,7 +51,7 @@ export const Container = styled.div(({ done }: ContainerProps)=>(
     }
 `
 
-));
+));*/
     
     
   
